@@ -2,7 +2,7 @@ import React from 'react';
 import orderDetailsStyle from './OrderDetails.module.css';
 import finishImage from '../../images/finish.svg';
 
-function OrderDetails() {
+const OrderDetails = () => {
     return (
       <div className={`${orderDetailsStyle.box}  pr-25 pl-25`}>
         <p

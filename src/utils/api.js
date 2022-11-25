@@ -3,19 +3,19 @@ const config = {
     headers: {
       "Content-Type": "application.json",
     },
-  }
+}
   
-  function checkResponse (res) {
+function checkResponse (res) {
     if (res.ok) {
       return res.json();
     }
     return Promise.reject(new Error(`${res.status}`));
-  };
+};
   
   
-  function getData () {
+function getData () {
    return fetch(`${config.url}`)
     .then(checkResponse)
-  }
+}
   
-  export {getData}
+export {getData}

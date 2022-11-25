@@ -1,0 +1,14 @@
+.box {
+    margin-top: 95px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+}

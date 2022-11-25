@@ -1,0 +1,21 @@
+.cardBox {
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    cursor: pointer;
+    max-width: 272px;
+}
+  
+.cardImg {
+    width: 100%;
+}
+  
+.cardPrice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.cardName {
+    text-align: center;
+}
