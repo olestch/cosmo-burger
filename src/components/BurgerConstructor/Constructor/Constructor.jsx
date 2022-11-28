@@ -1,12 +1,9 @@
 import React from "react";
 import { ConstructorElement } from "@ya.praktikum/react-developer-burger-ui-components";
 import { ConstructorItem } from "../ConstructorItem/ConstructorItem";
-import { data } from "../../../utils/data";
 import { ingredients} from "../../../utils/ingredients";
 import constructorStyle from "./Constructor.module.css";
 import PropTypes from "prop-types";
-
-const dataItemOne = data[0];
 
 
 const Constructor = (props) => {
@@ -17,9 +14,9 @@ const newData = props.data;
         <ConstructorElement
           type="top"
           isLocked={true}
-          text={dataItemOne.name + "(верх)"}
-          price={dataItemOne.price}
-          thumbnail={dataItemOne.image}
+          text={newData[0].name + "(верх)"}
+          price={newData[0].price}
+          thumbnail={newData[0].image}
         />
       </div>
       <ul className={constructorStyle.itemList}>
@@ -42,9 +39,9 @@ const newData = props.data;
         <ConstructorElement
           type="bottom"
           isLocked={true}
-          text={dataItemOne.name + "(низ)"}
-          price={dataItemOne.price}
-          thumbnail={dataItemOne.image}
+          text={newData[0].name + "(низ)"}
+          price={newData[0].price}
+          thumbnail={newData[0].image}
         />
       </div>
     </div>

@@ -3,7 +3,6 @@ import burgerIngredientsStyle from "./BurgerIngredients.module.css";
 import PropTypes from "prop-types";
 import { ingredients } from "../../utils/ingredients";
 import { IngredientSection } from "./IngredientSection/IngredientSection";
-import { IngredientsTitle } from "./IngredientsTitle/IngredientsTitle";
 import { CardFunction } from "./CardFunction/CardFunction";
 import { IngredientsBox } from "./IngredientsBox/IngredientsBox";
 import { Tab } from "@ya.praktikum/react-developer-burger-ui-components";
@@ -55,10 +54,7 @@ const BurgerIngredients = (props) => {
 
   return (
     <IngredientSection sectionStyle={`${burgerIngredientsStyle.section} mt-10`}>
-      <IngredientsTitle
-        text="Соберите бургер"
-        textStyle={`${burgerIngredientsStyle.title} text text_type_main-large mb-5`}
-      />
+      <h1 className={`${burgerIngredientsStyle.title} text text_type_main-large mt-5 mb-5`}>Соберите бургер</h1>
       <IngredientsTabs 
         tabStyle={`${burgerIngredientsStyle.tab} mb-5`} 
         banRef={bunRef}

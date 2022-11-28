@@ -5,7 +5,12 @@ const ingredients = PropTypes.shape({
   name: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   image: PropTypes.string.isRequired,
-  type: PropTypes.string
+  image_large: PropTypes.string.isRequired,
+  type: PropTypes.string,
+  calories: PropTypes.number,
+  carbohydrates: PropTypes.number,
+  fat: PropTypes.number,
+  proteins: PropTypes.number,
 });
 
 export {ingredients};

@@ -8,13 +8,6 @@ import { OrderDetails } from "../OrderDetails/OrderDetails";
 import appStyle from "./App.module.css";
 import { getData } from "../../utils/api";
 
-const Test = () => {
-  const shoutTest = () => {
-    console.log('HEY THIS IS A TEST');
-  }
-  shoutTest();
-}
-
 const App = () => {
   const [ingredientModal, setIngredientModal] = useState(false);
   const [orderModal, setOrderModal] = useState(false);
@@ -50,7 +43,6 @@ const App = () => {
   const openIngredientModal = (ingredient) => {
     setCurrentIngredient(ingredient);
     setIngredientModal(true);
-    console.log(currentIngredient);
   };
 
   return (
