@@ -5,20 +5,11 @@ import {
   ListIcon,
   ProfileIcon,
 } from "@ya.praktikum/react-developer-burger-ui-components";
+import MenuItem from "../MenuItem/MenuItem";
 import appHeaderStyle from "./AppHeader.module.css";
 
 const  AppHeader = () => {
-  
-  const MenuItem = (props) => {
-    return (
-      <div className={props.itemStyle}>
-        <a href={props.link} className={`${appHeaderStyle.link}`}>
-          {props.icon}
-          <p className={props.styleText}>{props.text}</p>
-        </a>
-      </div>
-    );
-  }
+
   return (
     <header className={`${appHeaderStyle.header}`}>
       <nav className={`${appHeaderStyle.navbar}`}>
