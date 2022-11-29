@@ -13,5 +13,3 @@ export const ingredients = PropTypes.shape({
   image_large: PropTypes.string.isRequired,
   image_mobile: PropTypes.string.isRequired,
 });
-
-export {ingredients};

@@ -1,5 +1,6 @@
 import React from "react";
-import menuItemStyle from "./MenuItem.module.css"
+import PropTypes from "prop-types";
+import menuItemStyle from "./MenuItem.module.css";
 
 const MenuItem = (props) => {
     return (
@@ -10,6 +11,14 @@ const MenuItem = (props) => {
         </a>
       </div>
     );
+}
+
+MenuItem.propTypes = {
+  itemStyle: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  icon: PropTypes.func.isRequired,
+  styleText: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
 }
 
 export { MenuItem };

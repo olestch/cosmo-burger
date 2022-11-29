@@ -5,7 +5,7 @@ import {
   ListIcon,
   ProfileIcon,
 } from "@ya.praktikum/react-developer-burger-ui-components";
-import MenuItem from "../MenuItem/MenuItem";
+import { MenuItem } from "../MenuItem/MenuItem";
 import appHeaderStyle from "./AppHeader.module.css";
 
 const  AppHeader = () => {
